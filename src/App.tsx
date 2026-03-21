@@ -1,6 +1,7 @@
 import { DocLink } from "./shared/components/DocLink";
 import { Logo } from "./shared/components/Logo";
 import { PageHeader } from "./shared/components/PageHeader";
+import { Search } from "./shared/components/Search";
 import { Section } from "./shared/components/Section";
 import { UserMeta } from "./shared/components/UserMeta";
 import { FileCodeIcon } from "./shared/icons/FileCodeIcon";
@@ -22,6 +23,7 @@ function App() {
         <FileCodeIcon className="w-5 h-5" />
         <FileEditIcon className="w-5 h-5" />
       </PageHeader>
+      <Search />
     </>
   );
 }
