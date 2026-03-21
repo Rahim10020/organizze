@@ -1,5 +1,6 @@
 import { Header } from "./home/components/Header";
 import { LeftSidebar } from "./home/components/LeftSidebar";
+import { RightSidebar } from "./home/components/RightSidebar";
 import { PageHeader } from "./shared/components/PageHeader";
 import { Section } from "./shared/components/Section";
 import { FileCodeIcon } from "./shared/icons/FileCodeIcon";
@@ -21,6 +22,7 @@ function App() {
         <FileEditIcon className="w-5 h-5" />
       </PageHeader>
       <LeftSidebar />
+      <RightSidebar title="On this page" />
     </>
   );
 }
