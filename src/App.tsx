@@ -1,7 +1,10 @@
 import { DocLink } from "./shared/components/DocLink";
 import { Logo } from "./shared/components/Logo";
+import { PageHeader } from "./shared/components/PageHeader";
 import { Section } from "./shared/components/Section";
 import { UserMeta } from "./shared/components/UserMeta";
+import { FileCodeIcon } from "./shared/icons/FileCodeIcon";
+import { FileEditIcon } from "./shared/icons/FileEditIcon";
 
 function App() {
   return (
@@ -15,6 +18,10 @@ function App() {
           mon doigt
         </p>
       </Section>
+      <PageHeader title="Takopi Documentation">
+        <FileCodeIcon className="w-5 h-5" />
+        <FileEditIcon className="w-5 h-5" />
+      </PageHeader>
     </>
   );
 }
