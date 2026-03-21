@@ -28,7 +28,7 @@ export function UserMeta(props: UserMetaProps) {
         />
       </div>
       {/* right */}
-      <div className="flex flex-col gap-p0-5">
+      <div className="flex flex-col">
         {/* username */}
         <div>
           <span className="text-m14 text-black-80">{username}</span>
