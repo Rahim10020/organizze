@@ -1,17 +1,16 @@
+import { Header } from "./home/components/Header";
 import { DocLink } from "./shared/components/DocLink";
-import { Logo } from "./shared/components/Logo";
 import { PageHeader } from "./shared/components/PageHeader";
 import { Search } from "./shared/components/Search";
 import { Section } from "./shared/components/Section";
-import { UserMeta } from "./shared/components/UserMeta";
 import { FileCodeIcon } from "./shared/icons/FileCodeIcon";
 import { FileEditIcon } from "./shared/icons/FileEditIcon";
 
 function App() {
   return (
     <>
-      <Logo />
-      <UserMeta />
+      <Header />
+
       <DocLink href="#">Moi</DocLink>
       <Section title="Notre avenir">
         <p>

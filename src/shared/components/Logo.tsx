@@ -10,7 +10,7 @@ export function Logo(props: LogoProps) {
   return (
     <div className="flex items-center gap-p1">
       <img src="/images/logo.png" alt="logo image" className={iconSize} />
-      <p className="text-black">{name}</p>
+      <span className="text-black text-dp24">{name}</span>
     </div>
   );
 }
