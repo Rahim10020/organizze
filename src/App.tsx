@@ -2,7 +2,6 @@ import { Header } from "./home/components/Header";
 import { LeftSidebar } from "./home/components/LeftSidebar";
 import { PageHeader } from "./shared/components/PageHeader";
 import { Section } from "./shared/components/Section";
-import { SidebarItem } from "./shared/components/SidebarItem";
 import { FileCodeIcon } from "./shared/icons/FileCodeIcon";
 import { FileEditIcon } from "./shared/icons/FileEditIcon";
 
@@ -22,7 +21,6 @@ function App() {
         <FileEditIcon className="w-5 h-5" />
       </PageHeader>
       <LeftSidebar />
-      <SidebarItem active={true}>Overview</SidebarItem>
     </>
   );
 }

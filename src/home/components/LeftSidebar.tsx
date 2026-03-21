@@ -1,15 +1,29 @@
+import { SidebarItem } from "../../shared/components/SidebarItem";
+
+const items = [
+  "Overview",
+  "Switch engines",
+  "Projects",
+  "Worktrees",
+  "Route by chat",
+  "Topics",
+  "Voice notes",
+  "File transfer",
+  "Schedule tasks",
+  "Add a runner",
+];
+
 export function LeftSidebar() {
   return (
     <aside>
       <ul>
-        <li>Overview</li>
-        <li>Switch engine</li>
-        <li>Projects</li>
-        <li>Topics</li>
-        <li>Voice notes</li>
-        <li>Add a runner</li>
-        <li>Dev setup</li>
-        <li>File transfer</li>
+        {items.map((label) => (
+          <SidebarItem
+            key={label}
+            label={label}
+            active={label === "Overview"}
+          />
+        ))}
       </ul>
     </aside>
   );
