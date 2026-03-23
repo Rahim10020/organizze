@@ -5,14 +5,16 @@ import { SunIcon } from "../../shared/icons/SunIcon";
 
 export function Header() {
   return (
-    <header className="flex items-center justify-between mx-auto">
-      <Logo size="sm" />
-      <div className="flex items-center gap-p8">
-        <div className="flex items-center gap-p4">
-          <SunIcon className="w-5 h-5 hover:cursor-pointer text-black-60" />
-          <Search className="w-40" />
+    <header className="mx-auto max-w-5xl">
+      <div className="flex items-center justify-between ">
+        <Logo size="sm" />
+        <div className="flex items-center gap-p8">
+          <div className="flex items-center gap-p4">
+            <SunIcon className="w-5 h-5 hover:cursor-pointer text-black-60" />
+            <Search className="w-40" />
+          </div>
+          <UserMeta />
         </div>
-        <UserMeta />
       </div>
     </header>
   );
