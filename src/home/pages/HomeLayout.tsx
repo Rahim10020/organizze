@@ -12,9 +12,9 @@ export function HomeLayout(props: HomeLayoutProps) {
   const { children } = props;
 
   return (
-    <div className="min-h-screen bg-white text-black-80">
+    <div className="min-h-screen flex flex-col bg-white text-black-80">
       <Header />
-      <div className="mx-auto max-w-5xl px-p4 lg:px-p8 py-p10 ">
+      <div className="flex-1 mx-auto max-w-5xl px-p4 lg:px-p8 py-p10 ">
         <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_260px] gap-p3 lg:gap-p4">
           <aside className="hidden lg:block sticky top-p6 overflow-y-auto">
             <LeftSidebar />
