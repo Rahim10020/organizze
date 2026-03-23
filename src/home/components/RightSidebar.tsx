@@ -12,18 +12,28 @@ const items = [
 
 export function RightSidebar(props: RightSidebarProps) {
   const { title = "On this page" } = props;
+  const baseClass = "text-r18  cursor-pointer";
+
+  const activeItem = "Daily use";
+
   return (
     <aside>
-      <h4 className="text-black-80 text-b18">{title}</h4>
-      <ul>
-        {items.map((item) => (
-          <li
-            key={item}
-            className="text-r18 text-black-80 hover:text-primary cursor-pointer"
-          >
-            {item}
-          </li>
-        ))}
+      <h4 className="text-black-80 text-b18 mb-p2">{title}</h4>
+      <ul className="flex flex-col gap-p2">
+        {items.map((item) => {
+          const isActive = item === activeItem;
+          const activeClass = isActive
+            ? "text-primary underline"
+            : "text-black-80 hover:text-primary";
+          const resultClass = [baseClass, activeClass]
+            .filter(Boolean)
+            .join(" ");
+          return (
+            <li key={item} className={resultClass}>
+              {item}
+            </li>
+          );
+        })}
       </ul>
     </aside>
   );
