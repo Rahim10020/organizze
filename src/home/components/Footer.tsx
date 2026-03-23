@@ -5,7 +5,7 @@ import { TwitterIcon } from "../../shared/icons/TwitterIcon";
 
 export function Footer() {
   return (
-    <footer className="min-h-screen flex flex-col">
+    <footer>
       <div className="flex flex-col border-t border-black-5">
         <div className="mx-auto max-w-5xl w-full ">
           <div className="flex justify-between py-p8">

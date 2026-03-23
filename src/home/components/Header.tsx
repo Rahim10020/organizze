@@ -5,7 +5,7 @@ import { SunIcon } from "../../shared/icons/SunIcon";
 
 export function Header() {
   return (
-    <header className="mx-auto max-w-5xl px-p4 lg:px-p8">
+    <header className="mx-auto max-w-5xl px-p4 lg:px-p8 py-p6">
       <div className="flex items-center justify-between ">
         <Logo size="sm" />
         <div className="flex items-center gap-p8">

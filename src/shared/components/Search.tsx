@@ -8,7 +8,7 @@ export type SearchProps = {
 export function Search(props: SearchProps) {
   const { placeholder = "Search", className } = props;
   const baseClasses =
-    "flex items-center justify-between bg-black-5 py-p1 px-p4 rounded-r2 hover:cursor-pointer";
+    "flex items-center justify-between bg-black-5 py-p2 px-p4 rounded-r2 hover:cursor-pointer";
   const allClasses = [baseClasses, className].filter(Boolean).join(" ");
 
   return (
@@ -17,8 +17,8 @@ export function Search(props: SearchProps) {
         <SearchIcon className="w-5 h-5 text-black-60" />
         <span className="text-r18 text-black-70">{placeholder}</span>
       </div>
-      <div className="flex items-center justify-center p-p2 bg-white-60 rounded-r2">
-        <kbd className="text-r14 text-black-70">Ctrl K</kbd>
+      <div className="flex items-center justify-center py-p1 px-p2 bg-white-60 rounded-r2">
+        <kbd className="text-r12 text-black-70">Ctrl K</kbd>
       </div>
     </div>
   );

@@ -41,6 +41,22 @@ export function HomePage() {
           </p>
         </div>
       </Section>
+      <Section title="Daily use">
+        <div className="mb-p6 text-r18 text-black-80">
+          <p>
+            How-to guides are goal-oriented recipes. Pick the task you&apos;re
+            trying to accomplish and follow the steps.
+          </p>
+          <p>
+            If you&apos;re learning from scratch, start with{" "}
+            <DocLink href="#">Tutorials</DocLink>
+          </p>
+          <p>
+            If you need exact options and defaults, use{" "}
+            <DocLink href="#">Reference</DocLink>
+          </p>
+        </div>
+      </Section>
     </main>
   );
 }
