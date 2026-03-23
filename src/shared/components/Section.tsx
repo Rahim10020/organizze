@@ -10,8 +10,8 @@ export type SectionProps = {
 export function Section(props: SectionProps) {
   const { title, children, id } = props;
   return (
-    <section id={id} className="">
-      <h2>{title}</h2>
+    <section id={id}>
+      <h2 className="text-b18 text-black-80 mb-p6">{title}</h2>
       <div>{children}</div>
     </section>
   );
