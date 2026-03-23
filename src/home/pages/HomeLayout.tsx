@@ -19,7 +19,7 @@ export function HomeLayout(props: HomeLayoutProps) {
           <aside className="hidden lg:block sticky top-p6 overflow-y-auto">
             <LeftSidebar />
           </aside>
-          <main className="min-w-0 max-w-none px-p8">{children}</main>
+          <main className="min-w-0 max-w-none px-p4">{children}</main>
           <aside className="hidden lg:block top-p6 overflow-y-auto px-p6">
             <RightSidebar title="On this page" />
           </aside>
