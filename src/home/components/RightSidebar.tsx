@@ -12,14 +12,14 @@ const items = [
 
 export function RightSidebar(props: RightSidebarProps) {
   const { title = "On this page" } = props;
-  const baseClass = "text-r18 cursor-pointer text-nowrap";
+  const baseClass = "text-r20 cursor-pointer text-nowrap";
 
   const activeItem = "Daily use";
 
   return (
     <aside>
       <h4 className="text-black-80 text-b18 mb-p2">{title}</h4>
-      <ul className="flex flex-col gap-p2">
+      <ul className="flex flex-col gap-p4">
         {items.map((item) => {
           const isActive = item === activeItem;
           const activeClass = isActive

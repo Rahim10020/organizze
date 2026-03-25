@@ -6,7 +6,7 @@ export type SidebarItemProps = {
 export function SidebarItem(props: SidebarItemProps) {
   const { label, active = false } = props;
   const baseClass =
-    "text-r18 px-p4 py-p2 w-full flex items-start rounded-r2 cursor-pointer";
+    "text-r20 px-p4 py-p2 w-full flex items-start rounded-r2 cursor-pointer";
   const conditionClass = active
     ? "text-primary bg-primary-5"
     : "text-black-80 hover:bg-black-5";

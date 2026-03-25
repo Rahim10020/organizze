@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -121,7 +121,7 @@
 @layer base {
   :root {
     font-family:
-      Geist,
+      "Nunito",
       system-ui,
       -apple-system,
       BlinkMacSystemFont,

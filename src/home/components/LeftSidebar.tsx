@@ -16,7 +16,7 @@ const items = [
 export function LeftSidebar() {
   return (
     <aside>
-      <ul>
+      <ul className="flex flex-col gap-p4">
         {items.map((label) => (
           <SidebarItem
             key={label}
