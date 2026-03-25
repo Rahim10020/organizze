@@ -1,7 +1,16 @@
 import { Logo } from "../../shared/components/Logo";
+import { NavItem } from "../../shared/components/NavItem";
 import { Search } from "../../shared/components/Search";
 import { UserMeta } from "../../shared/components/UserMeta";
 import { SunIcon } from "../../shared/icons/SunIcon";
+
+const navItems = [
+  { label: "Home", href: "#", active: true },
+  { label: "Tutorials", href: "#", active: false },
+  { label: "How-to", href: "#", active: false },
+  { label: "Reference", href: "#", active: false },
+  { label: "Explanation", href: "#", active: false },
+];
 
 export function Header() {
   return (
@@ -20,7 +29,17 @@ export function Header() {
         </div>
         {/* second line */}
         <nav>
-          <ul className="flex items-cente gap-p6 "></ul>
+          <ul className="flex items-center gap-p6 ">
+            {navItems.map((item) => (
+              <li key={item.label}>
+                <NavItem
+                  label={item.label}
+                  href={item.href}
+                  active={item.active}
+                />
+              </li>
+            ))}
+          </ul>
         </nav>
       </div>
     </header>
