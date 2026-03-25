@@ -15,11 +15,11 @@ export function HomeLayout(props: HomeLayoutProps) {
     <div className="min-h-screen flex flex-col bg-white text-black-80">
       <Header />
       <div className="flex-1 mx-auto max-w-7xl px-p4 lg:px-p8 py-p10 ">
-        <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_260px] gap-p3 lg:gap-p4">
+        <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_270px] gap-p3 lg:gap-p4">
           <aside className="hidden lg:block sticky top-p6 overflow-y-auto">
             <LeftSidebar />
           </aside>
-          <main className="min-w-0 max-w-none px-p4">{children}</main>
+          <main className="max-w-7xl">{children}</main>
           <aside className="hidden lg:block top-p6 overflow-y-auto px-p6">
             <RightSidebar title="On this page" />
           </aside>

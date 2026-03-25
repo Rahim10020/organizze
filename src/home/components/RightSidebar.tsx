@@ -12,7 +12,7 @@ const items = [
 
 export function RightSidebar(props: RightSidebarProps) {
   const { title = "On this page" } = props;
-  const baseClass = "text-r20 cursor-pointer text-nowrap";
+  const baseClass = "text-r20 cursor-pointer";
 
   const activeItem = "Daily use";
 

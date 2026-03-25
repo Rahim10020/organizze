@@ -12,7 +12,7 @@ export function PageHeader(props: PageHeaderProps) {
   const resultClass = [baseClass, className].filter(Boolean).join(" ");
   return (
     <div className={resultClass}>
-      <h1 className="text-b24 text-black-80">{title}</h1>
+      <h1 className="text-b32 text-black-80">{title}</h1>
       <div className="flex items-center gap-p0-5">{children}</div>
     </div>
   );
