@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer>
       <div className="flex flex-col border-t border-black-5">
-        <div className="mx-auto max-w-5xl w-full ">
+        <div className="mx-auto max-w-7xl w-full ">
           <div className="flex justify-between py-p8">
             {/* Previous */}
             <div className="flex items-end gap-p4 cursor-pointer">
@@ -33,7 +33,7 @@ export function Footer() {
         </div>
 
         <div className="bg-black-5 flex items-center justify-end py-p8 ">
-          <div className="mx-auto max-w-5xl flex items-center justify-end w-full">
+          <div className="mx-auto max-w-7xl flex items-center justify-end w-full">
             <div className="flex items-center gap-p4">
               <TwitterIcon className="w-4 h-4 hover:text-black-40 cursor-pointer" />
               <TelegramIcon className="w-4 h-4 hover:text-black-40 cursor-pointer" />

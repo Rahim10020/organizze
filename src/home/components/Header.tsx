@@ -15,7 +15,7 @@ const navItems = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black-5 bg-white px-p4 lg:px-p8 py-p6">
-      <div className="mx-auto max-w-5xl w-full">
+      <div className="mx-auto max-w-7xl w-full">
         {/* first line */}
         <div className="flex items-center justify-between">
           <Logo size="sm" />
@@ -28,7 +28,7 @@ export function Header() {
           </div>
         </div>
         {/* second line */}
-        <nav>
+        <nav className="pt-p6">
           <ul className="flex items-center gap-p6 ">
             {navItems.map((item) => (
               <li key={item.label}>
