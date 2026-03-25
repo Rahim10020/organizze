@@ -7,6 +7,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black-5 bg-white px-p4 lg:px-p8 py-p6">
       <div className="mx-auto max-w-5xl w-full">
+        {/* first line */}
         <div className="flex items-center justify-between">
           <Logo size="sm" />
           <div className="flex items-center gap-p8">
@@ -17,6 +18,10 @@ export function Header() {
             <UserMeta />
           </div>
         </div>
+        {/* second line */}
+        <nav>
+          <ul className="flex items-cente gap-p6 "></ul>
+        </nav>
       </div>
     </header>
   );
