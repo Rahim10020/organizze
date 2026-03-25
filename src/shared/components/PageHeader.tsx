@@ -13,7 +13,7 @@ export function PageHeader(props: PageHeaderProps) {
   return (
     <div className={resultClass}>
       <h1 className="text-b32 text-black-80">{title}</h1>
-      <div className="flex items-center gap-p0-5">{children}</div>
+      <div className="flex items-center gap-p2">{children}</div>
     </div>
   );
 }

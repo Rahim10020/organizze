@@ -1,4 +1,5 @@
 import { DocLink } from "../../shared/components/DocLink";
+import { IconAction } from "../../shared/components/IconAction";
 import { PageHeader } from "../../shared/components/PageHeader";
 import { Section } from "../../shared/components/Section";
 import { FileCodeIcon } from "../../shared/icons/FileCodeIcon";
@@ -8,8 +9,12 @@ export function HomePage() {
   return (
     <main className="mx-p8">
       <PageHeader title="How-to-guides" className="mb-p6">
-        <FileEditIcon className="w-5 h-5 text-black-40 cursor-pointer" />
-        <FileCodeIcon className="w-5 h-5 text-black-40 cursor-pointer" />
+        <IconAction>
+          <FileEditIcon className="w-5 h-5 text-black-40 hover:text-primary" />
+        </IconAction>
+        <IconAction>
+          <FileCodeIcon className="w-5 h-5 text-black-40 hover:text-primary" />
+        </IconAction>
       </PageHeader>
       <div className="mb-p6 text-r20 tracking-wide text-black-80">
         <p>

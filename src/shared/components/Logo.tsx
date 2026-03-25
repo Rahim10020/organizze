@@ -8,9 +8,9 @@ export function Logo(props: LogoProps) {
   const iconSize = size === "sm" ? "h-6 w-6" : "h-8 w-8";
 
   return (
-    <div className="flex items-center gap-p4 cursor-pointer">
+    <div className="flex items-center gap-p6 cursor-pointer">
       <img src="/images/logo.png" alt="logo image" className={iconSize} />
-      <span className="text-black-80 text-b20">{name}</span>
+      <span className="text-black-80 text-b24">{name}</span>
     </div>
   );
 }
