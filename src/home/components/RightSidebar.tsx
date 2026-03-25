@@ -18,7 +18,7 @@ export function RightSidebar(props: RightSidebarProps) {
 
   return (
     <aside>
-      <h4 className="text-black-80 text-b18 mb-p2">{title}</h4>
+      <h4 className="text-black-80 text-b24 mb-p2">{title}</h4>
       <ul className="flex flex-col gap-p4">
         {items.map((item) => {
           const isActive = item === activeItem;

@@ -14,7 +14,7 @@ const navItems = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-black-5 bg-white px-p4 lg:px-p8 pb-p6 pt-p4">
+    <header className="sticky top-0 z-50 border-b border-black-5 bg-white px-p4 lg:px-p8 py-p4">
       <div className="mx-auto max-w-7xl w-full">
         {/* first line */}
         <div className="flex items-center justify-between">
