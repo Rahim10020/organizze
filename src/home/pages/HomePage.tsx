@@ -6,7 +6,7 @@ import { FileEditIcon } from "../../shared/icons/FileEditIcon";
 
 export function HomePage() {
   return (
-    <main>
+    <main className="mx-p8">
       <PageHeader title="How-to-guides" className="mb-p6">
         <FileEditIcon className="w-5 h-5 text-black-40 cursor-pointer" />
         <FileCodeIcon className="w-5 h-5 text-black-40 cursor-pointer" />
